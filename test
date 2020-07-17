@@ -1,0 +1,7 @@
+local DefaultChatSystemChatEvents = game.ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents")
+local SayMessageRequest = DefaultChatSystemChatEvents:WaitForChild("SayMessageRequest")
+
+while true do
+	wait(0.5)
+	SayMessageRequest:FireServer(message, "All")
+end
